@@ -1,1 +1,0 @@
-const {EmbedBuilder}=require('discord.js');const brand=0x159cff;function base(title){return new EmbedBuilder().setColor(brand).setTitle('🧰 '+title).setFooter({text:'Chest • Minecraft control center'}).setTimestamp()}function error(message){return base('Something went wrong').setColor(0xed4245).setDescription(String(message).slice(0,3500))}module.exports={base,error,brand};
