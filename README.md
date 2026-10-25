@@ -2,6 +2,8 @@
 
 Chest is a Node.js 20+ / Discord.js 14 slash-command bot for managing configured Minecraft Java servers. It combines status queries, RCON, allowlisted host lifecycle scripts, backups, log tailing, persistent audit history, scheduled tasks and a token-protected dashboard. Branding concept boards are included in `assets/branding/`.
 
+Website: https://lifeless-mausoleum-4gqr55wxv7qc46w-3100.app.github.dev/
+
 ## Implemented commands
 
 | Command | Purpose | Access |
