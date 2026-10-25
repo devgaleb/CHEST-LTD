@@ -1,0 +1,29 @@
+{
+  "name": "chest-minecraft-discord-bot",
+  "version": "5.0.0",
+  "description": "Chest \u2014 hardened Minecraft server management platform",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy": "node src/deploy-commands.js",
+    "check": "node --check src/index.js && node --check src/commands/index.js && node --check src/dashboard.js && node --check src/lib/config.js && node --check src/lib/minecraft.js && node --check src/lib/automation.js && node --check src/lib/backup.js && node --check src/lib/audit-store.js && node --check src/lib/logs.js && node --check src/lib/plugins.js && node --check src/lib/health.js",
+    "test": "node --test",
+    "verify": "npm run check && npm test",
+    "prestart": "npm run verify",
+    "predeploy": "npm run verify"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.19.3",
+    "dotenv": "^16.4.7",
+    "minecraft-server-util": "^5.4.4",
+    "rcon-client": "^4.2.5",
+    "archiver": "^7.0.1",
+    "express": "^4.21.2",
+    "node-cron": "^3.0.3",
+    "yauzl": "^3.2.0"
+  }
+}
